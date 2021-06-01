@@ -1,7 +1,9 @@
 /*commentaires*/
 body {
     font-family: 'Raleway', sans-serif;
-    margin : 0 3%;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
 }
 nav {
     display: flex;
@@ -26,7 +28,7 @@ a[href="#hebergements"] {
 nav span {
     color: #0065FC;
 }
-.recherche h1 {
+.similar-size {
     font-size: 1.4em;
 }
 .fa-map-marker-alt {
@@ -106,10 +108,18 @@ nav span {
     height: 700px;
     width: 880px;
 }
+.hebergements h2 {
+    padding-left: 35px;
+    padding-top: 20px;
+}
+.afficher {
+    padding-left: 35px;
+}
 .card-hrooms {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 4px;
 }
 .card-hrooms img {
     border-radius: 15px 15px 0 0;
@@ -123,9 +133,12 @@ nav span {
 .fa-star {
     color: #0065FC;
 }
+.section2-3 span {
+    color: #F2F2F2;
+}
 .populaires {
     background-color: #F2F2F2;
-    border-radius: 12px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     height: 700px;
@@ -133,19 +146,39 @@ nav span {
 .proom {
     background-color: white;
     padding: 5px;
-    margin: 20px;
-    border-radius: 10%;
+    margin: 20px 30px 30px 30px;
+    border-radius: 25px;
+    display:flex;
+    width: 370px;
+}
+.sidetext {
+    display:flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.sidestars {
+    display: flex;
+}
+.proom img {
+    border-radius: 22px 0 0 22px;
 }
 .h2i {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    margin: 0 20px 0 20px;
+}
+.card-prooms {
+    display: flex;
+    flex-direction: column;
 }
 /* footer */
 footer {
     background-color: #F2F2F2;
     display: flex;
 
-
-
-
+}
+.rubrique {
+    padding-right: 250px;
+}
