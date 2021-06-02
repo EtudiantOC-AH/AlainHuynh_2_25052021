@@ -217,11 +217,12 @@ nav span {
 }
 /* footer */
 footer {
-    box-sizing: border-box !important;
     background-color: #F2F2F2;
     display: flex;
     height: 13em;
+    margin: 0 -2% 0 -2%
 }
 .rubrique {
-    padding: 18px 250px 0 0;
+    padding: 18px 220px 0 0;
+    margin-left: 2%;
 }
