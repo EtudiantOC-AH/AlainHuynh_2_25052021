@@ -12,14 +12,23 @@
     <body>
         <!-- header -->
         <header>
-                <nav>
-                    <img src="images/logo/Reservia.svg" alt="Logo de l'agence">
-                    <ul>
-                        <li><a href="#hebergements">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
-                        <li><span>S'inscrire</span></li>
-                    </ul>
-                </nav>
+            <nav>
+                <img src="images/logo/Reservia.svg" alt="Logo de l'agence">
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                    <li><span>S'inscrire</li></span>
+                </ul>
+            </nav>
+
+            <div class="menu-small">
+                <span>S'inscrire</span>
+            </div>
+            <div class="menu-under">
+                <a href="#hebergements">Hébergement</a>
+                <a href="#activites">Activités</a>
+            </div>
+
         </header>
         <!-- main -->
         <main>
@@ -33,7 +42,8 @@
                     <form method="post" action="#.php">
                         <p> 
                             <i class="fas fa-map-marker-alt"></i>
-                            <input type="search" name="ville" id="ville" value="Marseille, France" size=30/>
+                            <input type="search" name="ville" id="ville" value="Marseille, France" size="25"/>
+                            <i class="fas fa-search"></i>
                             <input id="button" type="submit" value="Rechercher" />
                         </p>    
                     </form>
@@ -52,8 +62,8 @@
                 </div>
             </section>
             <!-- section 2 -->
-            <div class="section2-3">
-                <section class="hebergements">
+            <section class="section2-3">
+                <div id="hebergements">
                     <h2 class="similar-size">Hébergement à Marseille</h2>
                     <div class="card-hrooms">
                         <div class="hroom">
@@ -140,11 +150,11 @@
                             </div>
                             </a>
                         </div>
-                    </div>  
+                    </div> 
                     <p class="afficher">Afficher plus</p>
-                </section>
+                </div> 
                 <!-- section 3 -->
-                <section class="populaires">
+                <div id="populaires">
                 <div class="h2i">
                 <h2 class="similar-size">Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
@@ -193,10 +203,10 @@
                         </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
              <!-- section 4 -->
-             <section class="activites">
+             <section id="activites">
                  <h2 class="similar-size">Activités à Marseille</h2>
                  <div class="container">
                     <div class="part1">
@@ -204,6 +214,7 @@
                             <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                             <h3>Vieux Port</h3>
                         </div>
+                    </div>
                     <div class="column">
                         <div class="cadre">
                             <img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
@@ -214,12 +225,12 @@
                             <h3>Îles du Frioul</h3>
                         </div>
                     </div>
-                    </div>
                     <div class="part2">
                         <div class="cadre">
                             <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                             <h3>Parc National des Calanques</h3>
                         </div>
+                    </div>
                     <div class="column">
                         <div class="cadre">
                             <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
@@ -229,7 +240,6 @@
                             <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                             <h3>Parc Longchamp</h3>
                         </div>
-                    </div>
                     </div>
                 </div>
              </section>
