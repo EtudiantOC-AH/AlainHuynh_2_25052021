@@ -6,9 +6,10 @@ body {
 .menu-small, .menu-under {
     display:none;
 }
-header, main {
+header, main, .footer-container {
     width: 92vw;
     margin: auto;
+    max-width: 1280px;
 }
 header {
     display: flex;
@@ -66,6 +67,7 @@ nav span {
 }
 .search-bar p {
     display: flex;
+    margin-top: 30px;
 }
 .filters-box {
     display: flex;
@@ -243,6 +245,10 @@ nav span {
     border-radius: 20px;    
     margin-bottom: 15%;
 }
+.row1024 { 
+display: flex;
+flex-direction: column;
+}
 #activites img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -268,15 +274,20 @@ img[alt="Îles du Frioul"], img[alt="Notre-Dame-de-la-Garde"] {
 /* footer */
 footer {
     background-color: #F2F2F2;
+}
+.footer-container {
     display: flex;
     flex-wrap: wrap;
 }
 .rubrique {
-    padding-left: 3%;
-    margin-right: 15%;
+    margin-right: 19%;
 }
 
-@media screen and (max-width: 368px) {
+
+@media screen and (max-width: 425px) {
+main, header, .footer-container {
+    width: 100vw;
+}
 nav ul {
     display: none;
 }
@@ -289,7 +300,8 @@ nav ul {
     color: #0065FC;
 }
 .menu-under {
-    padding: 40px 0 30px;
+    padding: 40px;
+    text-align: center;
 }
 a[href="#hebergements"] {
     border-bottom: 3px #0065FC solid;
@@ -301,6 +313,15 @@ a[href="#hebergements"] {
     padding-bottom: 10px;
     padding-right: 65px;
 }
+header img {
+    margin-left: 15px;
+}
+.menu-small span {
+    margin-right: 15px;
+}
+.h1p {
+    margin: 0 15px;
+}
 #button {
     display:none 
 }
@@ -311,8 +332,21 @@ a[href="#hebergements"] {
     background-color: #0065FC;
     color: white;
 }
+.search-bar p {
+    margin: 0 15px 15px 15px;
+    padding-top: 10px;
+}
 .filters-box li {
     margin-top: 10px;
+}
+.filters-box h2, .info p {
+    margin: 0 15px;
+}
+.filters-box h2 {
+    padding-top: 10px;
+}
+.info p {
+    padding-top: 15px;
 }
 .section2-3 {
     flex-direction: column-reverse;
@@ -320,28 +354,23 @@ a[href="#hebergements"] {
 #populaires {
     width: 100%;
     border-radius: 0%;
-}
-.h2i {
-    margin: 0;
+    margin-top: 20px;
 }
 .proom {
     margin: 0 0 15px;
-}
-img[alt="Hôtel tout bleu et blanc"] {
-    width: 180px !important;
+    width: 90%;
+    margin-left: 16px;
 }
 #hebergements h2 {
     padding-left: 15px;
 }
 #hebergements {
     background-color: white;
+    margin-top: 0 !important;
 }
 #hebergements img{
     width: 280px;
     height: 140px;
-}
-.card-hrooms {
-    margin-left: 15px;
 }
 .afficher { 
     padding-left: 20px;
@@ -358,52 +387,31 @@ img[alt="Hôtel tout bleu et blanc"] {
     justify-content:center;
 }
 .rubrique {
-        padding-left: 10%;
+        padding-left: 10% !important;
 } 
 }
-@media screen and (max-width: 768px) {
-nav ul {
-    display: none;
-}
-.menu-small, .menu-under {
-    display: initial;
-}
-.menu-small {
-    text-align: end;
-    margin-top: -30px;
-    color: #0065FC;
-}
-.menu-under {
-    padding: 40px 0 30px;
-    text-align: center;
-}
-a[href="#hebergements"] {
-    border-bottom: 3px #0065FC solid;
-    border-top: none;
-    padding-bottom: 10px;
-}
-.menu-under a[href="#activites"] {
-    border-bottom: 3px #F2F2F2 solid;
-    padding-bottom: 10px;
-    padding-right: 65px;
-}
-li i fas fa-dog {
-    margin-top: 10px;
-}
-#hebergements {
-    width: 100%;
-}
-#populaires {
-    width: 100%;
-    margin-top: 40px;
-}
-}
 @media screen and (max-width: 1024px) {
+.section2-3 {
+flex-direction: column-reverse;
+}
 #hebergements {
     width: 100%;
+    margin-top: 35px;
+}
+#hebergements h2 {
+    padding-bottom: 10px;
+}
+.afficher {
+    padding-bottom: 15px;
 }
 #populaires {
     width: 100%;
-    margin-top: 40px;
+}
+.container {
+    width: 75%;
+    padding-left: 12%;
+}
+.rubrique {
+    margin-right: 15%;
 }
 }
