@@ -300,7 +300,7 @@ nav ul {
     color: #0065FC;
 }
 .menu-under {
-    padding: 40px;
+    padding: 40px 0 40px;
     text-align: center;
 }
 a[href="#hebergements"] {
