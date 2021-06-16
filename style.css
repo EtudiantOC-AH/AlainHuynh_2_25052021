@@ -84,7 +84,7 @@ nav span {
     border: 2px #F2F2F2 solid;
     border-left-width: 0;
     border-radius: 30px ;
-    margin-right: 30px;
+    margin: 10px 30px 0 0;
     padding-right: 25px;
 }
 .filters-box li:hover {
@@ -284,7 +284,7 @@ footer {
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
 main, header, .footer-container {
     width: 100vw;
 }
@@ -357,9 +357,8 @@ header img {
     margin-top: 20px;
 }
 .proom {
-    margin: 0 0 15px;
+    margin: 0 auto 15px auto;
     width: 90%;
-    margin-left: 16px;
 }
 #hebergements h2 {
     padding-left: 15px;
@@ -382,20 +381,24 @@ header img {
     width: 280px;
     height: 140px;
 }
-/* footer */
 .container {
-    justify-content:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
 }
+/* footer */
 .rubrique {
-        padding-left: 10% !important;
+    padding-left: 10% !important;
 } 
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 .section2-3 {
 flex-direction: column-reverse;
 }
 #hebergements {
-    width: 100%;
+    width: 100% !important;
     margin-top: 35px;
 }
 #hebergements h2 {
@@ -405,11 +408,28 @@ flex-direction: column-reverse;
     padding-bottom: 15px;
 }
 #populaires {
-    width: 100%;
+    width: 100% !important;
 }
 .container {
-    width: 75%;
-    padding-left: 12%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100% !important;
+}
+.rubrique {
+    margin-right: 15%;
+}
+}
+@media screen and (max-width: 1024px) {
+#hebergements {
+    width: 61%;
+}
+#populaires {
+    width: 38%;
+}
+.container {
+    width: 85%;
+    justify-content: space-around;
 }
 .rubrique {
     margin-right: 15%;
