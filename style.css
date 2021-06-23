@@ -521,15 +521,16 @@ flex-direction: column-reverse;
     flex-direction: column-reverse;
 }
 #hebergements {
-    width: 100%;
+    width: 100% !important;
     margin-top: 30px;
 }
 #populaires {
-    width: 100%;
+    width: 100% !important;
 }
 .container {
-    width: 85%;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .footer-container .rubrique:first-child {
     margin-right: 10%;
@@ -537,4 +538,19 @@ flex-direction: column-reverse;
 .footer-container .rubrique:nth-last-of-type(2) {
     margin-right: 10%;
 }
+}
+@media screen and (max-width: 1200px) {
+#hebergements {
+    width: 56%;
+}
+#populaires {
+    width: 41%;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 1280px) {
 }
