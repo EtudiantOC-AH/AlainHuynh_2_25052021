@@ -59,7 +59,7 @@ a[href="#activites"] {
 #ville {
     border: 1px #F2F2F2 solid;
     font-weight: bold;
-    padding-inline-start: 15px;
+    padding-left: 15px;
 }
 .search-bar p {
     display: flex;
