@@ -53,7 +53,7 @@ a[href="#activites"] {
 }
 
 .fa-map-marker-alt {
-    border: 12px #F2F2F2 solid;
+    border: 12px transparent solid;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
 }
@@ -63,7 +63,7 @@ i.fa-search {
 }
 
 #button {
-    border: 8px #0065FC solid;
+    border: 8px transparent solid;
     border-radius: 0 10px 10px 0;
     background-color: #0065FC;
     color: white;
@@ -111,7 +111,7 @@ i.fa-search {
 }
 
 .filters-box i {
-    border: 10px #DEEBFF solid;
+    border: 10px transparent solid;
     border-radius: 20px;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -434,7 +434,7 @@ footer {
     }
     i.fa-search {
         display: initial;
-        border: 11px #0065FC solid;
+        border: 11px transparent solid;
         border-radius: 0 10px 10px 0;
         background-color: #0065FC;
         color: white;
@@ -542,7 +542,7 @@ footer {
     }
     .fa-search {
         display: initial;
-        border: 11px #0065FC solid;
+        border: 11px transparent solid;
         border-radius: 0 10px 10px 0;
         background-color: #0065FC;
         color: white;
